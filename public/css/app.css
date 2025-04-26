@@ -1,0 +1,58 @@
+/* Variáveis de cor */
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #f8f9fc;
+    --accent-color: #2e59d9;
+  }
+
+  /* Estilos globais */
+  body {
+    background-color: var(--secondary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Cards */
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    transition: all 0.3s;
+  }
+
+  .card:hover {
+    box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.15);
+  }
+
+  /* Botões */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+  }
+
+  /* Formulários */
+  .form-control {
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+  }
+
+  /* Navbar */
+  .navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  /* Imagens */
+  .img-thumbnail {
+    border-radius: 50%;
+    object-fit: cover;
+  }

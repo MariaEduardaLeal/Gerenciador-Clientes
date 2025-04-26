@@ -80,16 +80,5 @@
 @push('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#cpf_cnpj').mask('000.000.000-00', {
-            onKeyPress: function(cpf, e, field, options) {
-                if (cpf.length > 14) {
-                    $(field).mask('00.000.000/0000-00');
-                }
-            }
-        });
-    });
-</script>
 @endpush
 @endsection
