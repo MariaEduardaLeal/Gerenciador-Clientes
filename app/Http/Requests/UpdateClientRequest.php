@@ -25,8 +25,18 @@ class UpdateClientRequest extends FormRequest
             'name' => 'required|string|max:255',
             'birth_date' => 'required|date',
             'cpf_cnpj' => 'required|string|max:20|unique:clients,cpf_cnpj,' . $this->client->id,
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'photo' => 'nullable|image|mimes:png|max:2048',
             'social_name' => 'nullable|string|max:255',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'photo.mimes' => 'A foto deve ser no formato PNG.',
+            'photo.max' => 'A foto não pode ultrapassar 2MB.',
+            'name.required' => 'O campo nome é obrigatório.',
+            'cpf_cnpj.unique' => 'Este CPF/CNPJ já está cadastrado.',
         ];
     }
 }
