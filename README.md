@@ -67,7 +67,7 @@ pbsoft-clientes/
 
 | Tecnologia | Finalidade |
 |------------|------------|
-| Laravel 10 | Backend MVC |
+| Laravel 11 | Backend MVC |
 | Bootstrap 5 | UI Responsiva |
 | Carbon | Manipulação de datas |
 | Intervention Image | Processamento de imagens |
