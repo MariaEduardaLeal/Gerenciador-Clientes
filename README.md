@@ -143,17 +143,3 @@ STORAGE_DISK=public
 |--------|--------|
 | laravel/framework | ^10.0 |
 | intervention/image | ^2.7 |
-
-## 📬 Rotas API (Opcional)
-```php
-Route::get('/api/clients', [ClientController::class, 'index']);
-Route::post('/api/clients', [ClientController::class, 'store']);
-```
-
-## 🛑 Possíveis Erros e Soluções
-
-| Erro | Solução |
-|------|---------|
-| `403 This action is unauthorized` | Verifique `authorize()` nos Form Requests |
-| `Target class does not exist` | Rode `composer dump-autoload` |
-| `Image upload fails` | Verifique permissões em `storage/app/public` |
